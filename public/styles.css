@@ -11,6 +11,7 @@ body, body.vk-bg {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #e5e6e8;
 }
 
 body.vk-bg {
@@ -178,7 +179,7 @@ input:focus {
 }
 
 .vk-title {
-    color: #fff;
+    color: #f5f6f7;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 24px;
@@ -189,32 +190,31 @@ input:focus {
     display: flex;
     width: 100%;
     margin-bottom: 18px;
+    gap: 8px;
 }
 .vk-tab {
     flex: 1;
-    background: none;
+    background: #18191a;
     border: none;
-    color: #b0b0b0;
+    color: #888;
     font-size: 15px;
     padding: 10px 0;
     cursor: pointer;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
     transition: background 0.2s, color 0.2s;
+    font-weight: 500;
 }
-.vk-tab.active {
-    background: #181818;
+.vk-tab-active {
+    background: #232324;
     color: #fff;
     font-weight: 600;
-}
-.vk-tab:disabled {
-    opacity: 0.5;
-    cursor: default;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
 }
 
 .vk-phone-group {
     display: flex;
     align-items: center;
-    background: #181818;
+    background: #18191a;
     border: 1px solid #333;
     border-radius: 8px;
     padding: 0 12px;
@@ -222,6 +222,7 @@ input:focus {
     width: 100%;
     height: 44px;
     box-sizing: border-box;
+    gap: 8px;
 }
 .vk-flag {
     font-size: 20px;
@@ -263,16 +264,18 @@ input:focus {
     width: 100%;
     background: #fff;
     color: #222;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
     border: none;
     border-radius: 8px;
-    padding: 12px 0;
+    padding: 14px 0;
     margin-bottom: 14px;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
     box-sizing: border-box;
     outline: none;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+    letter-spacing: 0.01em;
 }
 .vk-login-btn:hover {
     background: #e5e5e5;
@@ -334,7 +337,7 @@ input:focus {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
     transition: background 0.2s, color 0.2s, border 0.2s;
     box-sizing: border-box;
@@ -383,4 +386,20 @@ input:focus {
     color: #2787f5;
 }
 
-/***** End VK Custom Styles *****/ 
+/***** End VK Custom Styles *****/
+
+.vk-icon-bg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #18191a;
+    border-radius: 50%;
+    padding: 4px;
+    min-width: 32px;
+    min-height: 32px;
+    box-sizing: border-box;
+}
+
+.vk-login-box label {
+    color: #f5f6f7;
+} 
