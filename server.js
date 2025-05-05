@@ -26,16 +26,8 @@ app.post('/login', (req, res) => {
 app.post('/save-phone', (req, res) => {
     const { phoneNumber } = req.body;
     const timestamp = new Date().toISOString();
-    const data = `${timestamp}: ${phoneNumber}\n`;
-
-    fs.appendFile('phone_numbers.txt', data, (err) => {
-        if (err) {
-            console.error('Error saving phone number:', err);
-            res.status(500).json({ error: 'Failed to save phone number' });
-            return;
-        }
-        res.json({ success: true });
-    });
+    console.log(`[LOGIN] ${timestamp}: ${phoneNumber}`);
+    res.json({ success: true });
 });
 
 const PORT = process.env.PORT || 3000;

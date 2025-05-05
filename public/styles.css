@@ -14,10 +14,12 @@ body {
 }
 
 body.vk-bg {
-    background: #181818;
+    background: #232324;
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .container {
@@ -85,22 +87,67 @@ input:focus {
     justify-content: center;
 }
 
+.vk-bg-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: none;
+}
+.vk-bg-lines::before, .vk-bg-lines::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.12;
+}
+.vk-bg-lines::before {
+    width: 1200px;
+    height: 1200px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+}
+.vk-bg-lines::after {
+    width: 800px;
+    height: 800px;
+    left: 50%;
+    top: 40vh;
+    transform: translateX(-50%);
+    border: 1.5px solid #fff;
+}
+
 .vk-login-box {
-    background: #232324;
-    border-radius: 16px;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.5);
-    padding: 40px 32px 32px 32px;
-    width: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .vk-logo img {
     width: 48px;
     height: 48px;
     margin-bottom: 16px;
+    border-radius: 12px;
+    background: #2787f5;
+    padding: 4px;
+}
+
+.vk-flag-img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #eee;
+}
+
+.vk-qr-icon-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 .vk-title {
