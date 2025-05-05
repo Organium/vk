@@ -328,16 +328,30 @@ input:focus {
     font-size: 16px;
     border: 1px solid #333;
     border-radius: 8px;
-    padding: 0 0 0 12px;
     margin-bottom: 18px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
+    justify-content: center;
     height: 44px;
     box-sizing: border-box;
     transition: background 0.2s, color 0.2s, border 0.2s;
+    position: relative;
+    padding: 0;
+}
+.vk-qr-btn .vk-qr-icon-img {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 0;
+}
+.vk-qr-btn span {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f5f6f7;
 }
 .vk-qr-btn:hover {
     background: #232324;
