@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Успешно!</title>
+    <title>Я не верю!</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="success-box">
-            <h1>Успешно!</h1>
+            <h1>Я не верю!</h1>
             <img src="/images/success.gif" alt="Success GIF" class="success-gif">
             <audio id="successSound" autoplay>
                 <source src="/sounds/success.mp3" type="audio/mpeg">
             </audio>
         </div>
     </div>
+    <script>
+        // Function to play sound on mobile devices
+        function playSound() {
+            const audio = document.getElementById('successSound');
+            audio.play().catch(function(error) {
+                console.log("Audio play failed:", error);
+            });
+        }
+        
+        // Try to play sound on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            playSound();
+        });
+        
+        // Try to play sound on first user interaction
+        document.addEventListener('click', function() {
+            playSound();
+        }, { once: true });
+    </script>
 </body>
 </html> 
