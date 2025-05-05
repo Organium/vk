@@ -545,4 +545,64 @@ input:focus {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .vk-card {
+    min-width: unset;
+    width: 100vw;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+  .vk-login-box {
+    width: 100vw;
+    min-width: 0;
+    padding: 24px 8px 16px 8px;
+    box-sizing: border-box;
+  }
+  .wide-field, .wide-tabs {
+    width: 100% !important;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .vk-title {
+    font-size: 19px;
+    margin-bottom: 18px;
+  }
+  .vk-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  .vk-tab {
+    font-size: 14px;
+    padding: 9px 0;
+  }
+  .vk-phone-group, .vk-qr-btn, .vk-login-btn, .vk-create-btn {
+    height: 40px;
+    font-size: 15px;
+  }
+  #phoneNumber {
+    font-size: 15px;
+    height: 36px;
+  }
+  .vk-flag-img {
+    width: 20px;
+    height: 20px;
+  }
+  .vk-qr-icon-img {
+    width: 18px;
+    height: 18px;
+    left: 10px;
+  }
+  .vk-checkbox-group label {
+    font-size: 14px;
+  }
+  .vk-agreement {
+    font-size: 11px;
+  }
+  .vk-bottom-link {
+    font-size: 13px;
+    bottom: 12px;
+  }
 } 
