@@ -134,14 +134,12 @@ input:focus {
 }
 
 .vk-login-box {
-    width: 380px;
-    padding: 40px 32px 32px 32px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: 1;
-    background: none;
+    padding: 40px 32px 32px 32px;
+    gap: 0;
 }
 
 .vk-logo-center {
@@ -181,15 +179,18 @@ input:focus {
     color: #f5f6f7;
     font-size: 22px;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     text-align: center;
 }
 
 .vk-tabs {
     display: flex;
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     gap: 8px;
+}
+.wide-tabs {
+    width: 340px !important;
 }
 .vk-tab {
     flex: 1;
@@ -197,11 +198,12 @@ input:focus {
     border: none;
     color: #888;
     font-size: 15px;
-    padding: 10px 0;
+    padding: 10px 0 10px 0;
     cursor: pointer;
     border-radius: 8px;
     transition: background 0.2s, color 0.2s;
     font-weight: 500;
+    margin: 0;
 }
 .vk-tab-active {
     background: #232324;
@@ -217,7 +219,7 @@ input:focus {
     border: 1px solid #333;
     border-radius: 8px;
     padding: 0 12px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     width: 100%;
     height: 44px;
     box-sizing: border-box;
@@ -241,23 +243,32 @@ input:focus {
 .vk-checkbox-group {
     display: flex;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     width: 100%;
+    gap: 8px;
 }
 .vk-checkbox-group input[type="checkbox"] {
     accent-color: #2787f5;
     width: 18px;
     height: 18px;
     margin-right: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .vk-checkbox-group label {
     color: #b0b0b0;
     font-size: 15px;
     cursor: pointer;
+    line-height: 1;
 }
 
-.vk-login-btn {
+.vk-login-btn, .vk-create-btn, .vk-qr-btn {
     width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+.vk-login-btn {
     background: #fff;
     color: #222;
     font-size: 16px;
@@ -265,16 +276,112 @@ input:focus {
     border: none;
     border-radius: 8px;
     padding: 12px 0;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-    box-sizing: border-box;
     outline: none;
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
     letter-spacing: 0.01em;
 }
 .vk-login-btn:hover {
     background: #e5e5e5;
+}
+
+.vk-create-btn {
+    background: #232324;
+    color: #b0b0b0;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px 0;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.vk-create-btn:hover {
+    background: #282828;
+    color: #fff;
+    border: 1px solid #2787f5;
+}
+
+.vk-or {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.vk-qr-btn {
+    background: #18191a;
+    color: #f5f6f7;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    box-sizing: border-box;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    position: relative;
+    padding: 0;
+}
+.vk-qr-btn .vk-qr-icon-img {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 0;
+}
+.vk-qr-btn span {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #f5f6f7;
+}
+.vk-qr-btn:hover {
+    background: #232324;
+    color: #fff;
+    border: 1px solid #2787f5;
+}
+
+.vk-agreement {
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    width: 100%;
+}
+.vk-agreement a {
+    color: #2787f5;
+    text-decoration: none;
+}
+.vk-agreement a:hover {
+    text-decoration: underline;
+}
+
+.vk-bottom-link {
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    bottom: 32px;
+    left: 0;
+    z-index: 1;
+}
+.vk-bottom-link a {
+    color: #888;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.vk-bottom-link a:hover {
+    color: #2787f5;
 }
 
 /***** VK Custom Styles *****/
