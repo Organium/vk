@@ -13,6 +13,13 @@ body {
     justify-content: center;
 }
 
+body.vk-bg {
+    background: #181818;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
 .container {
     width: 100%;
     max-width: 400px;
@@ -69,4 +76,230 @@ input:focus {
     max-width: 100%;
     margin-top: 20px;
     border-radius: 5px;
-} 
+}
+
+.vk-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vk-login-box {
+    background: #232324;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+    padding: 40px 32px 32px 32px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.vk-logo img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.vk-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.vk-tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 18px;
+}
+.vk-tab {
+    flex: 1;
+    background: none;
+    border: none;
+    color: #b0b0b0;
+    font-size: 15px;
+    padding: 10px 0;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    transition: background 0.2s, color 0.2s;
+}
+.vk-tab.active {
+    background: #181818;
+    color: #fff;
+    font-weight: 600;
+}
+.vk-tab:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.vk-phone-group {
+    display: flex;
+    align-items: center;
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0 12px;
+    margin-bottom: 18px;
+    width: 100%;
+    height: 44px;
+}
+.vk-flag {
+    font-size: 20px;
+    margin-right: 8px;
+}
+#phoneNumber {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+}
+#phoneNumber::placeholder {
+    color: #888;
+}
+
+.vk-checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    width: 100%;
+}
+.vk-checkbox-group input[type="checkbox"] {
+    accent-color: #2787f5;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+.vk-checkbox-group label {
+    color: #b0b0b0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.vk-login-btn {
+    width: 100%;
+    background: #fff;
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.vk-login-btn:hover {
+    background: #e5e5e5;
+}
+
+/***** VK Custom Styles *****/
+.vk-back-btn {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    background: none;
+    border: none;
+    color: #b0b0b0;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0;
+    z-index: 2;
+    transition: color 0.2s;
+}
+.vk-back-btn:hover {
+    color: #fff;
+}
+
+.vk-create-btn {
+    width: 100%;
+    background: #232324;
+    color: #b0b0b0;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px 0;
+    margin-bottom: 14px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.vk-create-btn:hover {
+    background: #282828;
+    color: #fff;
+    border: 1px solid #2787f5;
+}
+
+.vk-or {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.vk-qr-btn {
+    width: 100%;
+    background: #232324;
+    color: #b0b0b0;
+    font-size: 16px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px 0;
+    margin-bottom: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.vk-qr-btn:hover {
+    background: #282828;
+    color: #fff;
+    border: 1px solid #2787f5;
+}
+.vk-qr-icon {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.vk-agreement {
+    color: #888;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.vk-agreement a {
+    color: #2787f5;
+    text-decoration: none;
+}
+.vk-agreement a:hover {
+    text-decoration: underline;
+}
+
+.vk-bottom-link {
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    bottom: 32px;
+    left: 0;
+    z-index: 1;
+}
+.vk-bottom-link a {
+    color: #888;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.vk-bottom-link a:hover {
+    color: #2787f5;
+}
+
+/***** End VK Custom Styles *****/ 
