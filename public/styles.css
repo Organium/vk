@@ -125,7 +125,7 @@ input:focus {
     border-radius: 20px;
     box-shadow: 0 8px 40px 0 rgba(0,0,0,0.45);
     padding: 0;
-    min-width: 440px;
+    min-width: 460px;
     min-height: 600px;
     display: flex;
     align-items: center;
@@ -549,60 +549,60 @@ input:focus {
 
 @media (max-width: 600px) {
   .vk-card {
-    min-width: unset;
-    width: 100vw;
-    box-shadow: none;
-    border-radius: 0;
+    min-width: 460px;
+    width: unset;
+    box-shadow: 0 8px 40px 0 rgba(0,0,0,0.45);
+    border-radius: 20px;
     padding: 0;
   }
   .vk-login-box {
-    width: 100vw;
+    width: 400px;
     min-width: 0;
-    padding: 24px 8px 16px 8px;
+    padding: 40px 32px 32px 32px;
     box-sizing: border-box;
   }
   .wide-field, .wide-tabs {
-    width: 100% !important;
+    width: 340px !important;
     min-width: 0;
-    max-width: 100vw;
+    max-width: unset;
   }
   .vk-title {
-    font-size: 19px;
-    margin-bottom: 18px;
+    font-size: 22px;
+    margin-bottom: 22px;
   }
   .vk-logo-img {
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
   }
   .vk-tab {
-    font-size: 14px;
-    padding: 9px 0;
+    font-size: 15px;
+    padding: 10px 0;
   }
   .vk-phone-group, .vk-qr-btn, .vk-login-btn, .vk-create-btn {
-    height: 40px;
-    font-size: 15px;
+    height: 44px;
+    font-size: 16px;
   }
   #phoneNumber {
-    font-size: 15px;
-    height: 36px;
+    font-size: 17px;
+    height: 40px;
   }
   .vk-flag-img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
   .vk-qr-icon-img {
-    width: 18px;
-    height: 18px;
-    left: 10px;
+    width: 22px;
+    height: 22px;
+    left: 16px;
   }
   .vk-checkbox-group label {
-    font-size: 14px;
+    font-size: 15px;
   }
   .vk-agreement {
-    font-size: 11px;
+    font-size: 12px;
   }
   .vk-bottom-link {
-    font-size: 13px;
-    bottom: 12px;
+    font-size: 15px;
+    bottom: 32px;
   }
 } 
